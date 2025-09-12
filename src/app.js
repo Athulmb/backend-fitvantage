@@ -33,10 +33,13 @@ const PORT = process.env.PORT || 7000;
 connectDB();
 
 // CORS configuration
+const cors = require("cors");
+
 app.use(cors({
-  origin: ['http://localhost:3000','http://localhost:3005'],
+  origin: "*", // allow all during dev
   credentials: true
 }));
+
 
 // Middleware
 app.use(morgan('dev'));
