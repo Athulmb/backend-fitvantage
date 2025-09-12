@@ -32,8 +32,6 @@ const PORT = process.env.PORT || 7000;
 // Connect to database
 connectDB();
 
-// CORS configuration
-const cors = require("cors");
 
 app.use(cors({
   origin: "*", // allow all during dev
