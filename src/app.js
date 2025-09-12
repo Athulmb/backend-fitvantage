@@ -13,6 +13,9 @@ const centerRoutes = require('./routes/center.routes')
 const sportsRoutes = require('./routes/sport.routes')
 const storyRoutes = require('./routes/userStory.routes')  
 const pricingRoutes = require('./routes/pricing.routes')  
+const aboutRoutes = require('./routes/about.routes')
+const blogRoutes = require('./routes/blog.routes')
+
 
 
 
@@ -56,6 +59,8 @@ app.use("/api/centers", centerRoutes);
 app.use("/api/sports", sportsRoutes);
 app.use("/api/userstory", storyRoutes);
 app.use("/api/pricing", pricingRoutes);
+app.use("/api/about", aboutRoutes);
+app.use("/api/blog", blogRoutes);
 
 
 
